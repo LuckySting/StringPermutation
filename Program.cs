@@ -75,6 +75,10 @@ namespace StringPermutation
             return res;
         }
 
+        /// <summary>
+        /// Интерфейс ввода через файл
+        /// </summary>
+        /// <returns>Массив из двух строк, введенных пользователем</returns>
         static string[] FileImport()
         {
             string[] lines = File.ReadAllLines("input.txt");
@@ -89,6 +93,11 @@ namespace StringPermutation
         {
             File.WriteAllText("output.txt", outputString);
         }
+
+        /// <summary>
+        /// Точка входа в программу и основная бизнес логика
+        /// </summary>
+        /// <param name="args">Не используется</param>
         static void Main(string[] args)
         {
             try
